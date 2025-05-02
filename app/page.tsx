@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import { THEME, SHADOW } from "@/lib/color-pallete";
 import AboutIcon from "@/components/about-icon";
+import TechStack from "@/components/tech-stack";
 
 export default function Home() {
   return (
@@ -125,7 +126,83 @@ export default function Home() {
             </div>
           </div>
         </div>
+
+        <div className="flex flex-col justify-center min-h-screen py-8 px-[20%] gap-4">
+          <span className="font-semibold text-xl sm:text-2xl md:text-3xl">
+            Languages & Tools
+          </span>
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-10 md:gap-12 lg:gap-20 w-full max-w-6xl">
+            {techStacks.map((tech, index) => {
+              return (
+                <TechStack imgSrc={tech.imgSrc} alt={tech.alt} key={index} />
+              );
+            })}
+          </div>
+        </div>
       </section>
     </>
   );
 }
+
+const techStacks = [
+  {
+    imgSrc: "/tech-logo/java.png",
+    alt: "Java",
+  },
+  {
+    imgSrc: "/tech-logo/python.png",
+    alt: "Python",
+  },
+  {
+    imgSrc: "/tech-logo/c-sharp.png",
+    alt: "C#",
+  },
+  {
+    imgSrc: "/tech-logo/php.png",
+    alt: "PHP",
+  },
+  {
+    imgSrc: "/tech-logo/typescript.png",
+    alt: "TypesScript",
+  },
+  {
+    imgSrc: "/tech-logo/spring-boot.png",
+    alt: "Spring Boot",
+  },
+  {
+    imgSrc: "/tech-logo/fastapi.png",
+    alt: "FastAPI",
+  },
+  {
+    imgSrc: "/tech-logo/flutter.png",
+    alt: "Flutter",
+  },
+  {
+    imgSrc: "/tech-logo/react.png",
+    alt: "React",
+  },
+  {
+    imgSrc: "/tech-logo/pandas.png",
+    alt: "Pandas",
+  },
+  {
+    imgSrc: "/tech-logo/laravel.png",
+    alt: "Laravel",
+  },
+  {
+    imgSrc: "/tech-logo/docker.png",
+    alt: "Docker",
+  },
+  {
+    imgSrc: "/tech-logo/kubernetes.png",
+    alt: "Kubernetes",
+  },
+  {
+    imgSrc: "/tech-logo/tensorflow.png",
+    alt: "Tensorflow",
+  },
+  {
+    imgSrc: "/tech-logo/postgresql.png",
+    alt: "Postgresql",
+  },
+];
