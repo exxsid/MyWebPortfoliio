@@ -127,7 +127,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col justify-center min-h-screen py-8 px-[20%] gap-4">
+        <div className="flex flex-col justify-center min-h-screen py-8 sm:px-8 md:px-16 lg:px-24 xl:px-[20%] gap-4">
           <span className="font-semibold text-xl sm:text-2xl md:text-3xl">
             Languages & Tools
           </span>
