@@ -131,7 +131,7 @@ export default function Home() {
           <span className="font-semibold text-xl sm:text-2xl md:text-3xl">
             Languages & Tools
           </span>
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 sm:gap-10 md:gap-12 lg:gap-20 w-full max-w-6xl">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-8 md:gap-10 lg:gap-12 w-full max-w-6xl">
             {techStacks.map((tech, index) => {
               return (
                 <TechStack imgSrc={tech.imgSrc} alt={tech.alt} key={index} />
@@ -204,5 +204,13 @@ const techStacks = [
   {
     imgSrc: "/tech-logo/postgresql.png",
     alt: "Postgresql",
+  },
+  {
+    imgSrc: "/tech-logo/git.png",
+    alt: "GIT",
+  },
+  {
+    imgSrc: "/tech-logo/github.png",
+    alt: "GitHub",
   },
 ];
