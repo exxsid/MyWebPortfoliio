@@ -4,6 +4,19 @@ import Image from "next/image";
 import { THEME, SHADOW } from "@/lib/color-pallete";
 import AboutIcon from "@/components/about-icon";
 import TechStack from "@/components/tech-stack";
+import ProjectCard from "@/components/project-card";
+import {
+  JavaBadge,
+  CSharpBadge,
+  MySQLBadge,
+  FlutterBadge,
+  FastAPIBadge,
+  PostgreSQLBadge,
+  SQLAlchemyBadge,
+  ReactNativeBadge,
+  FirebaseBadge,
+  JavaScriptBadge,
+} from "@/components/tech-badges";
 
 export default function Home() {
   return (
@@ -137,6 +150,77 @@ export default function Home() {
                 <TechStack imgSrc={tech.imgSrc} alt={tech.alt} key={index} />
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[20%] w-screen h-fit py-8 sm:py-12 md:py-16">
+        <div className="flex flex-col gap-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+            Projects
+          </h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-4">
+            <ProjectCard
+              coverPhotoSrc="/projects/sari-sari.png"
+              title="Sari-sari Store Sale and Credit Management System"
+              description={`This project focuses on the development of a Mini-Mart 
+                Sales and Credit Management System aimed at improving the efficiency 
+                and accuracy of business operations in small to medium-sized convenience 
+                stores. The system automates key processes such as sales tracking, 
+                inventory management, and customer credit handling—replacing traditional, 
+                error-prone manual methods.`}
+              link="https://github.com/exxsid/sari-sari_store_sales-credit_management_system"
+            >
+              <CSharpBadge />
+              <MySQLBadge />
+            </ProjectCard>
+
+            <ProjectCard
+              coverPhotoSrc="/projects/terratreats.jpg"
+              title="TerraTreats"
+              description={`TerraTreats is an e-commerce platform designed to empower 
+                farmers by connecting them directly with consumers. By eliminating 
+                the need for middlemen, TerraTreats enables farmers to sell their fresh, 
+                locally grown produce directly to end buyers — ensuring fair prices 
+                for both parties and promoting sustainable agriculture.`}
+              link="https://github.com/exxsid/TerraTreats"
+            >
+              <FlutterBadge />
+              <FastAPIBadge />
+              <PostgreSQLBadge />
+              <SQLAlchemyBadge />
+            </ProjectCard>
+
+            <ProjectCard
+              coverPhotoSrc="/projects/blog.png"
+              title="Blog API"
+              description={`Build RESTful blog api using java Spring Boot`}
+              link="https://github.com/exxsid/blog-api"
+            >
+              <JavaBadge />
+            </ProjectCard>
+
+            <ProjectCard
+              coverPhotoSrc="/projects/blog.png"
+              title="Expense Tracker API"
+              description={`Spring Boot RESTful application. This application 
+                has authentication and CRUD functions for expenses.`}
+              link="https://github.com/exxsid/expense-tracker-api"
+            >
+              <JavaBadge />
+              <PostgreSQLBadge />
+            </ProjectCard>
+
+            <ProjectCard
+              coverPhotoSrc="/projects/smart-buddy.png"
+              title="Smart Buddy"
+              description={`An all-in-one academic productivity app and finance tracker for students`}
+              link="https://github.com/Yujinndev/SmartBuddy"
+            >
+              <ReactNativeBadge />
+              <FirebaseBadge />
+              <JavaScriptBadge />
+            </ProjectCard>
           </div>
         </div>
       </section>

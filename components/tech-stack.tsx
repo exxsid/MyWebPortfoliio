@@ -11,7 +11,7 @@ export default function TechStack({ imgSrc, alt }: TechStackProps) {
   return (
     <>
       <div
-        className="flex border-[0.15rem] p-2 items-center justify-center"
+        className="flex border-[0.15rem] p-2 items-center justify-center rounded-sm"
         style={{
           boxShadow: SHADOW.md,
           borderColor: THEME.dark,
