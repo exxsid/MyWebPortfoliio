@@ -44,20 +44,27 @@ export default function Home() {
           to building innovative solutions.
         </div>
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
-          <button
-            type="button"
-            className="flex flex-row items-center justify-center 
+          <a
+            href="https://drive.google.com/file/d/1HpvBSGhzwL6pkp2XGqX4he--jYaVvWYg/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              type="button"
+              className="flex flex-row items-center justify-center 
                 gap-2 sm:gap-3 rounded-full border-[0.15rem]
                 p-2 px-3 sm:px-4 w-full sm:w-auto"
-            style={{
-              color: THEME.dark,
-              borderColor: THEME.dark,
-              backgroundColor: THEME.accent,
-              boxShadow: SHADOW.sm,
-            }}
-          >
-            View Resume <FileUser />
-          </button>
+              style={{
+                color: THEME.dark,
+                borderColor: THEME.dark,
+                backgroundColor: THEME.accent,
+                boxShadow: SHADOW.sm,
+              }}
+            >
+              View Resume <FileUser />
+            </button>
+          </a>
+
           <button
             type="button"
             className="flex flex-row items-center justify-center 
