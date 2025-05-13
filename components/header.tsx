@@ -31,9 +31,15 @@ const Header = () => {
 
         {/* Desktop Navigation - Hidden on mobile */}
         <div className="hidden md:flex flex-row items-center gap-6 lg:gap-10">
-          <p className="cursor-pointer hover:font-medium">Home</p>
-          <p className="cursor-pointer hover:font-medium">About</p>
-          <p className="cursor-pointer hover:font-medium">Projects</p>
+          <a href="#home">
+            <p className="cursor-pointer hover:font-medium">Home</p>
+          </a>
+          <a href="#about">
+            <p className="cursor-pointer hover:font-medium">About</p>
+          </a>
+          <a href="#project">
+            <p className="cursor-pointer hover:font-medium">Projects</p>
+          </a>
         </div>
 
         {/* Contact Button - Hidden on mobile */}

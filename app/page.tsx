@@ -22,7 +22,10 @@ export default function Home() {
   return (
     <>
       {/* Hero Section - Made responsive with adaptive padding and font sizes */}
-      <div className="flex flex-col justify-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[20%] min-h-fit h-screen">
+      <div
+        className="flex flex-col justify-center px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[20%] min-h-fit h-screen"
+        id="home"
+      >
         <div
           className="font-bold text-lg sm:text-xl"
           style={{
@@ -78,6 +81,7 @@ export default function Home() {
         style={{
           backgroundColor: THEME.secondary,
         }}
+        id="about"
       >
         <div className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[20%] grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6 md:gap-10">
           {/* Profile Image - Centers on small screens, aligns left on medium+ */}
@@ -154,7 +158,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[20%] w-screen h-fit py-8 sm:py-12 md:py-16">
+      <section
+        className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[20%] w-screen h-fit py-8 sm:py-12 md:py-16"
+        id="project"
+      >
         <div className="flex flex-col gap-6">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             Projects
