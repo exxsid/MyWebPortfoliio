@@ -1,5 +1,14 @@
 import { MoveRight, FileUser } from "lucide-react";
 import Image from "next/image";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { FaLinkedinIn, FaKaggle } from "react-icons/fa6";
+import { GoMail } from "react-icons/go";
 
 import { THEME, SHADOW } from "@/lib/color-pallete";
 import AboutIcon from "@/components/about-icon";
@@ -65,20 +74,56 @@ export default function Home() {
             </button>
           </a>
 
-          <button
-            type="button"
-            className="flex flex-row items-center justify-center 
+          <Dialog>
+            <DialogTrigger asChild>
+              <button
+                type="button"
+                className="flex flex-row items-center justify-center 
                 gap-2 sm:gap-3 rounded-full border-[0.15rem]
                 p-2 px-3 sm:px-4 mt-3 sm:mt-0 w-full sm:w-auto"
-            style={{
-              color: THEME.dark,
-              borderColor: THEME.dark,
-              backgroundColor: THEME.primary,
-              boxShadow: SHADOW.sm,
-            }}
-          >
-            Contact <MoveRight />
-          </button>
+                style={{
+                  color: THEME.dark,
+                  borderColor: THEME.dark,
+                  backgroundColor: THEME.primary,
+                  boxShadow: SHADOW.sm,
+                }}
+              >
+                Contact <MoveRight />
+              </button>
+            </DialogTrigger>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle className="text-2xl">
+                  You can contact me here
+                </DialogTitle>
+              </DialogHeader>
+              <ul className="pl-3 gap-4">
+                <li className="flex gap-4 items-center">
+                  <GoMail />{" "}
+                  <a href="mailto:cortezleoanthony5@gmail.com">
+                    cortezleoanthony5@gmail.com
+                  </a>
+                </li>
+
+                <li className="flex gap-4 items-center">
+                  <FaLinkedinIn />{" "}
+                  <a href="https://www.linkedin.com/in/exxsid" target="_blank">
+                    Leo Anthony Cortez
+                  </a>
+                </li>
+
+                <li className="flex gap-4 items-center">
+                  <FaKaggle />{" "}
+                  <a
+                    href="https://www.kaggle.com/leoanthonycortez"
+                    target="_blank"
+                  >
+                    Leo Anthony Cortez
+                  </a>
+                </li>
+              </ul>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
 

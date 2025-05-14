@@ -34,7 +34,7 @@ export default function ProjectCard({
           <Image
             src={coverPhotoSrc}
             alt=""
-            layout="fill"
+            fill
             className="rounded-sm border-[0.15rem] object-cover"
             style={{
               borderColor: THEME.dark,
