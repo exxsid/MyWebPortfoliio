@@ -283,6 +283,52 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section
+        className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[20%] w-screen h-fit py-8 sm:py-12 md:py-16"
+        style={{
+          backgroundColor: THEME.secondary,
+        }}
+      >
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+          Experience
+        </h1>
+        <div className="flex flex-col items-center justify-center">
+          <div
+            className="px-8 py-4 my-8 border-[0.15rem]"
+            style={{
+              backgroundColor: THEME.accent,
+              boxShadow: SHADOW.md,
+              borderColor: THEME.dark,
+              color: THEME.dark,
+            }}
+          >
+            <div className="flex justify-between">
+              <h1 className="font-extrabold text-xl line-clamp-2">
+                Software Developer Intern
+              </h1>
+              <p className="font-semibold text-xl">June 2024 - July 2024</p>
+            </div>
+
+            <h3 className="font-semibold">S.P. Madrid & Associates</h3>
+            <ul className="list-disc pl-8">
+              <li>
+                Applied knowledge of machine learning principles to train
+                algorithms and optimize the performance of AI models.
+              </li>
+              <li>
+                Leveraged the NextJS framework to design and develop a robust
+                Content Management System (CMS) for Quality Assurance (QA),
+                streamlining processes and improving accessibility.
+              </li>
+              <li>
+                Collaborated effectively within a team setting, contributing
+                technical expertise and fostering seamless project execution.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
