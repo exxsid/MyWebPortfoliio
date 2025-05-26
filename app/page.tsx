@@ -26,6 +26,7 @@ import {
   FirebaseBadge,
   JavaScriptBadge,
 } from "@/components/tech-badges";
+import CertificateCard from "@/components/certificate-card";
 
 export default function Home() {
   return (
@@ -327,6 +328,138 @@ export default function Home() {
               </li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section className="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-[20%] w-screen h-fit py-8 sm:py-12 md:py-16">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
+          Certifications
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 items-start justify-start">
+          <CertificateCard
+            title="IBM Back-End Development - Coursera"
+            link="https://coursera.org/share/e7713f84b5d10d30e76d61de41fbfe6c"
+            skills={[
+              "Data Analysis",
+              "Software Testing",
+              "Computer Programming",
+              "Leadership and Management",
+              "Programming Principles",
+              "Software Architecture",
+              "Security Engineering",
+              "Collaboration",
+              "DevOps",
+              "Web Development",
+              "Software Engineering",
+              "Cloud Computing",
+            ]}
+          />
+
+          <CertificateCard
+            title="UC San Diego Big Data - Coursera"
+            link="https://drive.google.com/drive/folders/1FpcMvS-xztGxp38t9pqEwMHzz-aYzffF?usp=sharing"
+            skills={[
+              "Databases",
+              "Data Management",
+              "Data Analysis",
+              "Distributed Computing Architecture",
+              "Data Structures",
+              "Machine Learning",
+              "Big Data",
+              "Leadership and Management",
+              "SQL",
+              "Graph Theory",
+              "Statistical Programming",
+            ]}
+          />
+
+          <CertificateCard
+            title="Accenture Software Engineering Job Simulation on Forage - May 2025"
+            link="https://drive.google.com/file/d/1RZYvaDz5jIu4PkUCFdSCNvE0QyEYfr_I/view?usp=drive_link"
+            skills={[
+              "Agile",
+              "Analysis",
+              "Debugging Code",
+              "Identification",
+              "Maturity Level Assessments",
+              "Reading Code",
+              "SSDLC",
+              "Waterfall",
+            ]}
+          />
+
+          <CertificateCard
+            title="Commonwealth Bank Introduction to Data Science Job Simulation on Forage - November 2024"
+            link="https://drive.google.com/file/d/1BpezwTikCJnKwkie8aKlrI9Z-23bfG3x/view?usp=drive_link"
+            skills={[
+              "APIs",
+              "Data Analysis",
+              "Data Anonymisation",
+              "Data Privacy",
+              "Data Processing",
+              "Data Set Schema",
+              "Database Design",
+              "Database Documentation",
+              "Microsoft Excel",
+              "Statistics",
+              "Unstructured Data",
+            ]}
+          />
+
+          <CertificateCard
+            title="Citi ICG Technology Software Development Job Simulation on Forage - October 2024"
+            link="https://drive.google.com/file/d/1IAFIMMxbvKG4tCqaDH9DMXk8--zCzBk_/view?usp=drive_link"
+            skills={[
+              "APIs",
+              "Back-End Development",
+              "Data Visualization",
+              "Flowchart",
+              "Front-End Development",
+              "Java",
+              "Machine Learning",
+              "Risk Assessment",
+              "State Diagrams",
+              "System Design",
+              "Written Communication",
+            ]}
+          />
+
+          <CertificateCard
+            title="Hewlett Packard Enterprise Software Engineering Job Simulation on Forage - October 2024"
+            link="https://drive.google.com/file/d/149f2yd3VQGrW-besxjUSSJWUB1JABETZ/view?usp=drive_link"
+            skills={[
+              "Communication",
+              "Greenlake Cloud Platform",
+              "HTTP Requests",
+              "Java",
+              "Java Spring Boot",
+              "JSON",
+              "JUnit",
+              "Mockito",
+              "RESTful Development",
+              "RESTful Web Development",
+              "Unit Testing",
+            ]}
+          />
+
+          <CertificateCard
+            title="Wells Fargo Software Engineering Job Simulation on Forage - September 2024"
+            link="https://drive.google.com/file/d/1pAf8fIIs0S64qXvDP2ADx5_96INVEQIH/view?usp=drive_link"
+            skills={[
+              "Data Modeling",
+              "Entity Relationship Diagram",
+              "Java",
+              "JPA",
+              "Spring",
+              "System Design",
+            ]}
+          />
+
+          <CertificateCard
+            title="Skyscanner Front-End Software Engineering virtual experience programme on Forage - August 2024"
+            link="https://drive.google.com/file/d/10D7ULwnqyzPoVx1kccd2i3VqUiXlJBVT/view?usp=drive_link"
+            skills={["BackPack", "JavaScript", "React"]}
+          />
         </div>
       </section>
     </>
