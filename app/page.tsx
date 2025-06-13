@@ -55,7 +55,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
           <a
-            href="https://drive.google.com/file/d/1HpvBSGhzwL6pkp2XGqX4he--jYaVvWYg/view?usp=sharing"
+            href="https://drive.google.com/file/d/1Qw2YZrFqI4gXMQGcVlevluH6TR8MNXWP/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
